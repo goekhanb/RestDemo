@@ -1,0 +1,15 @@
+﻿@using System.Web.Http
+@using RestDemo.Models
+
+@model ItemListInfo
+
+@{
+    var description = Model.itemName;
+    ViewBag.Title = description.AsDateTime();
+}
+
+<link type="text/css" href="~/Areas/HelpPage/HelpPage.css" rel="stylesheet" />
+<div>
+
+</div>
+
