@@ -9,7 +9,10 @@ namespace RestDemo.Models
     [DataContract]
     public class WeatherInfo
     {
-        [DataMember(Name = "localtion")]
+        [DataMember(Name = "id")]
+        public int id { get; set;}
+
+        [DataMember(Name = "location")]
         public string Location { get; set;}
 
         [DataMember(Name = "degree")]

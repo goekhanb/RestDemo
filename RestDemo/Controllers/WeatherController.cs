@@ -10,6 +10,8 @@ namespace RestDemo.Controllers
 {
     public class WeatherController : ApiController
     {
+        List<WeatherInfo> listInfo = new List<WeatherInfo>();
+        
         // GET: api/Weather
         public IEnumerable<WeatherInfo> Get()
         {
@@ -18,6 +20,7 @@ namespace RestDemo.Controllers
             {
                 var weather = new WeatherInfo
                 {
+                    id = i,
                     Location = $"Location {i}",
                     Degree = i * 23 / 17,
                     DateTime = DateTime.Now.ToUniversalTime()
